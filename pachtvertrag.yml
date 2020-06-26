@@ -1,0 +1,74 @@
+metadata:
+    title: Pachtvertrag für Landwirte
+    short title: Pachtvertrag
+  ---
+  mandatory: True
+  question: |
+    Pachtvertrag ist fertig.
+  subquestion: |
+    Hier ist dein individueller Pachtvertrag!
+  buttons:
+    - Exit: exit
+    - Restart: restart
+  attachments:
+    - name: Pachtvertrag
+      filename: Pachtvertrag
+      docx template file: pachtvertrag.docx
+  ---
+  question: |
+    Wie heißt der Pächter?
+  subquestion: |
+    Wer pachtet die landwirtschaftlichen Flächen?
+  fields:
+    - 'Vorname': paechter_vorname
+    - 'Nachname': paechster_nachname
+  ---
+  question: |
+    Wer ist der Verpächter?
+  subquestion: |
+    Wie heißt der Verpächter der landwirtschaftlichen Flächen?
+  fields:
+    - 'Vorname': verpaechter_vorname
+    - 'Nachname': verpaechter_nachname
+  ---
+  question: |
+    Lasten auf dem Grundstück Wegerechte?
+  yesno: wegerecht
+  ---
+  question: |
+    Wie heißt die Wegerecht Nummer?
+  fields:
+    - 'Wegerecht Nummer': wegerecht_nummer 
+  ---
+  question: |
+    Wie viel Jahre beträgt die Pachtzeit?
+  fields: 
+    - 'Pachtjahre': pacht_jahre
+      datatype: integer
+  ---
+  question: |
+    Wann beginnt und endet die Pacht?
+  fields:
+    - 'Begin der Pacht': pacht_datum_start
+      datatype: date
+    - 'Ende der Pacht': pacht_datum_ende
+      datatype: date
+  ---
+  question: |
+    Wann beginnt das Pachtjahr?
+  fields:
+    - 'Begin des Pachtjahrs': pacht_jahr_start
+      datatype: date
+  ---
+  question: |
+    Ist das erste Pachtjahr abweichend?
+  yesno: abweichendes_pachtjahr 
+  ---
+  question: |
+    Wann beginnt und endet das erste abweichende Pachtjahr?
+  fields:
+    - 'Begin der Pacht': abweichende_pachtjahr_start
+      datatype: date
+    - 'Ende der Pacht': abweichende_pachtjahr_ende
+      datatype: date
+  ---
